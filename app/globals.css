@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 220 42% 3%;
+  --foreground: 210 40% 98%;
+  --card: 222 33% 7%;
+  --card-foreground: 210 40% 98%;
+  --primary: 217 91% 60%;
+  --primary-foreground: 0 0% 100%;
+  --border: 220 16% 18%;
+  --muted: 220 18% 12%;
+  --muted-foreground: 217 12% 68%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 96px;
+}
+
+body {
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at top left, rgba(59, 130, 246, 0.18), transparent 34rem),
+    radial-gradient(circle at top right, rgba(14, 165, 233, 0.1), transparent 32rem),
+    #05070d;
+}
+
+::selection {
+  background: rgba(59, 130, 246, 0.35);
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #070a12;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1f2937;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+@layer components {
+  .section-padding {
+    @apply py-20 sm:py-24 lg:py-28;
+  }
+
+  .glass-panel {
+    @apply border border-white/10 bg-white/[0.055] shadow-premium backdrop-blur-xl;
+  }
+
+  .premium-card {
+    @apply rounded-[28px] border border-white/10 bg-gradient-to-b from-white/[0.075] to-white/[0.035] shadow-premium backdrop-blur-xl;
+  }
+
+  .blue-glow {
+    box-shadow: 0 0 60px rgba(59, 130, 246, 0.2);
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
