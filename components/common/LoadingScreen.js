@@ -24,9 +24,14 @@ export default function LoadingScreen() {
             <motion.div
               className="mx-auto size-14 rounded-2xl border border-blue-400/30 bg-blue-400/10 shadow-glow"
               animate={{ rotate: 360, scale: [1, 1.08, 1] }}
-              transition={{ rotate: { duration: 1.2, repeat: Infinity, ease: "linear" }, scale: { duration: 1.2, repeat: Infinity } }}
+              transition={{
+                rotate: { duration: 1.2, repeat: Infinity, ease: "linear" },
+                scale: { duration: 1.2, repeat: Infinity },
+              }}
             />
-            <p className="mt-5 text-sm font-medium text-muted-foreground">Loading premium portfolio...</p>
+            <p className="mt-5 text-sm font-medium text-muted-foreground">
+              Loading Sana ullah portfolio...
+            </p>
           </div>
         </motion.div>
       ) : null}
