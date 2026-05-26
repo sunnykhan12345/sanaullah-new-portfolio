@@ -7,6 +7,8 @@ import { Button } from "@/components/ui/Button";
 import { Icon } from "@/components/common/Icon";
 
 export default function ProjectCard({ project, index = 0 }) {
+  const primaryCategory = project.categories?.[0] || "Project";
+
   return (
     <motion.article
       layout
@@ -22,19 +24,45 @@ export default function ProjectCard({ project, index = 0 }) {
           alt={`${project.title} preview`}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          className="object-cover transition duration-700 group-hover:scale-105"
+          className="object-contain object-center p-2 transition duration-700 group-hover:scale-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
-        <Badge className="absolute left-4 top-4 border-white/10 bg-black/40 text-white backdrop-blur-xl">
-          {project.category}
+
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
+
+        <Badge className="absolute left-4 top-4 border-white/10 bg-black/45 text-white backdrop-blur-xl">
+          {primaryCategory}
         </Badge>
+
+        {project.status && (
+          <Badge className="absolute right-4 top-4 border-white/10 bg-white/15 text-white backdrop-blur-xl">
+            {project.status}
+          </Badge>
+        )}
       </div>
 
       <div className="space-y-5 p-6">
         <div>
-          <h3 className="text-xl font-semibold tracking-[-0.035em] text-white">{project.title}</h3>
-          <p className="mt-3 text-sm leading-7 text-muted-foreground">{project.description}</p>
+          <h3 className="text-xl font-semibold tracking-[-0.035em] text-white">
+            {project.title}
+          </h3>
+
+          <p className="mt-3 text-sm leading-7 text-muted-foreground">
+            {project.description}
+          </p>
         </div>
+
+        {project.features?.length > 0 && (
+          <div className="flex flex-wrap gap-2">
+            {project.features.slice(0, 5).map((item) => (
+              <span
+                key={item}
+                className="rounded-full border border-primary/20 bg-primary/10 px-3 py-1 text-xs text-primary"
+              >
+                {item}
+              </span>
+            ))}
+          </div>
+        )}
 
         <div className="flex flex-wrap gap-2">
           {project.stack.map((item) => (
@@ -49,15 +77,37 @@ export default function ProjectCard({ project, index = 0 }) {
 
         <div className="flex flex-col gap-3 sm:flex-row">
           <Button asChild size="sm" className="w-full sm:w-auto">
-            <a href={project.liveUrl} aria-label={`View live demo for ${project.title}`}>
-              Live Demo <Icon name="external" className="size-4" />
+            <a href={project.caseStudyUrl || "#contact"}>
+              View Case Study <Icon name="external" className="size-4" />
             </a>
           </Button>
-          <Button asChild size="sm" variant="secondary" className="w-full sm:w-auto">
-            <a href={project.githubUrl} target="_blank" rel="noreferrer" aria-label={`View GitHub for ${project.title}`}>
-              GitHub <Icon name="github" className="size-4" />
-            </a>
-          </Button>
+
+          {project.liveUrl ? (
+            <Button
+              asChild
+              size="sm"
+              variant="secondary"
+              className="w-full sm:w-auto"
+            >
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={`View live demo for ${project.title}`}
+              >
+                Live Demo <Icon name="external" className="size-4" />
+              </a>
+            </Button>
+          ) : (
+            <Button
+              type="button"
+              size="sm"
+              variant="secondary"
+              className="w-full cursor-default sm:w-auto"
+            >
+              {project.status || "Private Project"}
+            </Button>
+          )}
         </div>
       </div>
     </motion.article>

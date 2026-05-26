@@ -44,14 +44,15 @@ export default function HeroSection() {
           >
             <motion.div variants={fadeUp} transition={{ duration: 0.6 }}>
               <Badge className="border-blue-400/30 bg-blue-400/10 text-blue-100">
-                {profile.role} - Gulf-market business UI specialist
+                {profile.role}
+                {/* - Gulf-market business UI specialist */}
               </Badge>
             </motion.div>
 
             <motion.h1
               variants={fadeUp}
               transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-              className="mt-6 text-balance text-5xl font-semibold leading-[0.98] tracking-[-0.075em] text-white sm:text-6xl"
+              className="mt-6 text-balance text-4xl font-semibold leading-[0.98] tracking-[-0.075em] text-white sm:text-6xl"
             >
               Frontend Developer for SaaS Dashboards, Landing Pages & Business
               Web Apps

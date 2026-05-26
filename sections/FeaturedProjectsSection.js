@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useMemo, useState } from "react";
@@ -13,25 +14,37 @@ export default function FeaturedProjectsSection() {
 
   const filteredProjects = useMemo(() => {
     if (activeFilter === "All") return projects;
-    return projects.filter((project) => project.category === activeFilter);
+
+    return projects.filter((project) =>
+      project.categories?.includes(activeFilter),
+    );
   }, [activeFilter]);
 
   return (
     <section id="projects" className="section-padding relative overflow-hidden">
       <div className="absolute right-0 top-20 size-96 rounded-full bg-blue-500/10 blur-3xl" />
+
       <Container>
         <SectionHeading
           eyebrow="Featured Projects"
-          title="Premium project cards for dashboards, SaaS systems, AI workflows, and websites."
-          description="Project examples are structured to show business value, UI quality, technology stack, and production-level frontend patterns."
+          title="SaaS dashboards, business platforms, and landing pages I have worked on."
+          description="A selected collection of private dashboard systems, AI workflows, CRM interfaces, booking flows, marketplace pages, and landing page designs built with modern frontend tools."
         />
 
-        <FilterTabs filters={projectFilters} activeFilter={activeFilter} onChange={setActiveFilter} />
+        <FilterTabs
+          filters={projectFilters}
+          activeFilter={activeFilter}
+          onChange={setActiveFilter}
+        />
 
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           <AnimatePresence mode="popLayout">
             {filteredProjects.map((project, index) => (
-              <ProjectCard key={project.title} project={project} index={index} />
+              <ProjectCard
+                key={project.title}
+                project={project}
+                index={index}
+              />
             ))}
           </AnimatePresence>
         </div>
