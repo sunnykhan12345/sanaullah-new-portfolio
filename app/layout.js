@@ -10,7 +10,7 @@ const geistSans = Geist({
 export const metadata = {
   metadataBase: new URL("https://pakdev-portfolio.vercel.app"),
   title: {
-    default: "PakDev - Frontend Developer Portfolio",
+    default: "SanaUllah - Frontend Developer Portfolio",
     template: "%s | PakDev",
   },
   description:

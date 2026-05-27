@@ -28,7 +28,7 @@ export default function SiteShell() {
         <CaseStudySection />
         <ServicesSection />
         <ExperienceTimeline />
-        {/* <TestimonialsSection /> */}
+        <TestimonialsSection />
         <ContactSection />
       </main>
       <Footer />

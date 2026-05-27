@@ -10,7 +10,7 @@ export const profile = {
   location: "Pakistan - Available for Gulf, UAE, KSA, Qatar & Remote Projects",
   availability: "Available for freelance, remote, and relocation opportunities",
   education: "BSCS, Agriculture University Peshawar (AUP), 2024",
-  cvUrl: "/assets/pakdev-cv.pdf",
+  cvUrl: "/assets/sanaullah-cv.pdf",
   socials: [
     {
       name: "GitHub",
@@ -208,7 +208,7 @@ export const projects = [
     ],
     stack: ["Next.js", "Tailwind", "Responsive Design"],
     status: "Preview Only",
-    caseStudyUrl: "#contact",
+    caseStudyUrl: "https://binhamaviation.com/",
     liveUrl: null,
     githubUrl: null,
   },
@@ -227,7 +227,7 @@ export const projects = [
     ],
     stack: ["Next.js", "Tailwind", "SEO", "Motion"],
     status: "Preview Only",
-    caseStudyUrl: "#contact",
+    caseStudyUrl: "https://www.continental.cleaning/",
     liveUrl: null,
     githubUrl: null,
   },
@@ -246,7 +246,7 @@ export const projects = [
     ],
     stack: ["React", "Tailwind", "Landing Page"],
     status: "Preview Only",
-    caseStudyUrl: "#contact",
+    caseStudyUrl: "https://tt.mlxsoft.com/",
     liveUrl: null,
     githubUrl: null,
   },
@@ -265,7 +265,7 @@ export const projects = [
     ],
     stack: ["React", "Tailwind", "UI Design"],
     status: "Preview Only",
-    caseStudyUrl: "#contact",
+    caseStudyUrl: "https://www.hausofaxion.ca/",
     liveUrl: null,
     githubUrl: null,
   },
@@ -284,7 +284,7 @@ export const projects = [
     ],
     stack: ["Next.js", "Tailwind", "Marketplace UI"],
     status: "Preview Only",
-    caseStudyUrl: "#contact",
+    caseStudyUrl: "https://jobifyy.com/",
     liveUrl: null,
     githubUrl: null,
   },
@@ -464,42 +464,42 @@ export const experiences = [
 
 export const testimonials = [
   {
-    name: "Ahmed Al-Farsi",
-    role: "Operations Manager",
-    company: "Gulf Business Group",
+    name: "Arslan Ijaz",
+    role: "CTO",
+    company: "Marvellex Software Solutions",
     image: "/assets/testimonials/client-1.svg",
     feedback:
-      "The dashboard UI felt premium, structured, and very easy for our team to use. The responsive behavior was especially strong.",
+      "Sana consistently delivered responsive frontend systems with clean structure, reusable components, and strong dashboard UI implementation for business platforms.",
   },
   {
-    name: "Sara Khan",
-    role: "Product Lead",
-    company: "CRM Startup",
+    name: "Pak Dev Studio Team",
+    role: "Frontend & Product Team",
+    company: "Pak Dev Studio",
     image: "/assets/testimonials/client-2.svg",
     feedback:
-      "PakDev converted complex workflows into a clean product interface with strong attention to detail and production quality.",
+      "Sana contributed to SaaS dashboards, CRM interfaces, and responsive frontend workflows with clean implementation and structured UI development.",
   },
   {
-    name: "Omar Nadeem",
-    role: "Founder",
-    company: "Travel Platform",
+    name: "Fahim Anik",
+    role: "Senior Software Engineer",
+    company: "Rattix IT",
     image: "/assets/testimonials/client-3.svg",
     feedback:
-      "The website design looked modern and professional for our market. The spacing, CTA flow, and mobile design were excellent.",
+      "The Haus of Axion MENA frontend was implemented with a modern UI approach, strong responsiveness, and polished user experience aligned with the project vision.",
   },
 ];
 
 export const contactItems = [
   {
     label: "Email",
-    value: "pakdevstudios@gmail.com",
-    href: "mailto:pakdevstudios@gmail.com",
+    value: "sunnykhansadda@gmail.com",
+    href: "mailto:sunnykhansadda@gmail.com",
     icon: "mail",
   },
   {
     label: "WhatsApp",
-    value: "+92 300 0000000",
-    href: "https://wa.me/923000000000",
+    value: "+92 3085342445",
+    href: "https://wa.me/923085342445",
     icon: "whatsapp",
   },
   {
@@ -510,8 +510,8 @@ export const contactItems = [
   },
   {
     label: "GitHub",
-    value: "github.com/pakdevstudios",
-    href: "https://github.com/pakdevstudios",
+    value: "github.com/sunnykhan12345",
+    href: "https://github.com/sunnykhan12345",
     icon: "github",
   },
   {
