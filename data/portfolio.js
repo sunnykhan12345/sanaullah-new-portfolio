@@ -10,7 +10,7 @@ export const profile = {
   location: "Pakistan - Available for Gulf, UAE, KSA, Qatar & Remote Projects",
   availability: "Available for freelance, remote, and relocation opportunities",
   education: "BSCS, Agriculture University Peshawar (AUP), 2024",
-  cvUrl: "/assets/sanaullah-cv.pdf",
+  cvUrl: "/assets/Sana_Ullah_Frontend_Developer_CV.pdf",
   socials: [
     {
       name: "GitHub",
