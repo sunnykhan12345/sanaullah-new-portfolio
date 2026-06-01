@@ -175,6 +175,27 @@ export const projects = [
     githubUrl: null,
   },
   {
+    title: "Dubai Business Experience Website",
+    categories: ["Landing Page"],
+    image: "/assets/projects/dubai.png",
+    description:
+      "A premium business consulting website for Dubai-focused entrepreneurs and investors, designed to showcase offers, packages, services, testimonials, and conversion-driven landing sections for business setup and growth support.",
+    features: [
+      "Hero landing section",
+      "Business offers & packages",
+      "Service breakdown sections",
+      "Testimonials slider",
+      "FAQ section",
+      "Lead generation contact forms",
+      "Conversion-focused CTA sections",
+    ],
+    stack: ["Next.js", "Tailwind CSS", "Responsive UI", "Landing Page Design"],
+    status: "Preview Only",
+    caseStudyUrl: "https://dubaibize.com/",
+    liveUrl: null,
+    githubUrl: null,
+  },
+  {
     title: "Tele Prospecting CRM",
     categories: ["CRM", "Dashboard", "Booking"],
     image: "/assets/projects/tele.png",
