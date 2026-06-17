@@ -328,6 +328,30 @@ export const projects = [
     liveUrl: null,
     githubUrl: null,
   },
+  {
+    title: "DAR AI Branding & Marketplace Platform",
+    categories: ["AI", "Marketplace", "SaaS", "Dashboard"],
+    image: "/assets/projects/dar-website.png",
+    description:
+      "A complete AI-powered branding and marketplace platform where businesses can generate logos, brand kits, landing pages, social media assets, product visuals, and sell products through an integrated marketplace ecosystem.",
+    features: [
+      "AI Logo Generation",
+      "Brand Kit Builder",
+      "Landing Page Creation",
+      "Marketplace Access",
+      "Seller Dashboard",
+      "Product Management",
+      "AI Business Audit",
+      "Billing System",
+      "Team Management",
+      "Multi-language Support",
+    ],
+    stack: ["Next.js", "React", "Tailwind CSS", "TypeScript", "REST APIs"],
+    status: "Private Project",
+    caseStudyUrl: "https://darhub.io/",
+    liveUrl: null,
+    githubUrl: null,
+  },
 ];
 
 export const caseStudies = [
